@@ -1,0 +1,33 @@
+skip to *** for instructions on build/run
+noted differences
+build.gradle
+version number for gradle
+
+gradlew 
+-& instead of /dev/null
+for bash script literal in command line
+
+gradlew.bat
+android studio mentions plugins you can install
+
+settings.gradle
+there is rootProject.name = 'SkoreCeeper'
+the other one does not have that
+
+gitignore
+a lot of differences
+
+***put this in gradle-wrapper.properties
+***distributionUrl=https\://services.gradle.org/distributions/gradle-2.14.1-all.zip
+
+***put this in android\build.gradle for dependencies
+***classpath 'com.android.tools.build:gradle:2.2.3'
+
+need this in command line adb server
+adb reverse tcp:8081 tcp:8081
+
+follow these steps:
+command prompt 1: adb device and adb reverse tcp:8081 tcp:8081
+command prompt 2: cd app folder and react-native start
+command prompt 3: cd app folder and react-native run-android
+
